@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Chatter</title>
+
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="chatter.js"></script>
+</head>
+<body>
+<div id="main-content" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form class="form-inline">
+                <div class="form-group">
+                    <img src="img/female.png" alt="Lina">
+                    <label style="font-size: medium">Lina</label>
+                </div>
+                <div class="form-group">
+                    <input type="image" style="align-content: flex-end" id="online" src="img/online.png"
+                           alt="Go Online">
+                    <input type="image" style="align-content: flex-end" id="offline" src="img/offline.png"
+                           alt="Go Offline"
+                           disabled="disabled">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table id="conversation" class="table">
+                <thead>
+                <tr>
+                    <th>Chat with Loyd(B)</th>
+                </tr>
+                </thead>
+                <tbody id="message">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <form class="form-inline">
+                <input type="text" class="mymsg" id="sendMessage" placeholder="Message please..">
+                <input type="image" id="send" src="img/send.png" alt="send" disabled="disabled">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

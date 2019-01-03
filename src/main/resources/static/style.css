@@ -1,0 +1,26 @@
+.container {
+    max-width: 600px;
+    padding: 2em 3em;
+    margin: 0 auto 10px;
+    border: 4px solid #c1baba;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    background-color: white;
+}
+
+body {
+    background-color: lightcyan;
+}
+
+input[type=image]:disabled {
+    opacity: 0.3;
+}
+
+.mymsg {
+    width: 350px;
+    background-color: floralwhite;
+    font-size: medium;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: darkred;
+}
